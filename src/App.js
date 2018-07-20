@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
 import Header from './components/header';
@@ -20,20 +20,57 @@ const Content = styled.div`
   background: url(${dustBg});
 `;
 
-const App = () => (
-  <AppContent className="App">
-    <div>
-      <Header />
+const ContentWrapper = styled.div`
+  max-width: 920px;
+  margin: auto;
+  padding: 0px 38px;
+`;
 
-      <MainMenu />
+class App extends PureComponent {
+  componentDidMount() {
+    // Get the navbar
+    const navbar = document.getElementById('navbar');
 
-      <Hero />
-    </div>
+    // Get the offset position of the navbar
+    const sticky = navbar.offsetTop;
 
-    <Content>
-      <Home />
-    </Content>
-  </AppContent>
-);
+    // Add the sticky class to the navbar when you reach its scroll position.
+    // Remove "sticky" when you leave the scroll position
+    const stickNavbar = () => {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    };
+
+    // When the user scrolls the page, execute stickNavbar
+    window.onscroll = () => {
+      stickNavbar();
+    };
+
+    stickNavbar();
+  }
+
+  render() {
+    return (
+      <AppContent className="App">
+        <div>
+          <Header />
+
+          <MainMenu />
+
+          <Hero />
+        </div>
+
+        <Content>
+          <ContentWrapper>
+            <Home />
+          </ContentWrapper>
+        </Content>
+      </AppContent>
+    );
+  }
+}
 
 export default App;

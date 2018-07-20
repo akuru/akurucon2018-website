@@ -57,7 +57,7 @@ const HeroText7 = styled.p`
 `;
 
 const HeroButton = styled.a`
-  font-family: Noto Sans ExtCond;
+  font-family: Noto Sans ExtraCondensed;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
@@ -76,7 +76,7 @@ const HeroButton = styled.a`
 `;
 
 const Hero = () => (
-  <HeroContainer>
+  <HeroContainer className="hero">
     <HeroContent>
       <HeroText1>අක්ෂර-රූපකරණය සහ අක්ෂර රටා නිර්මාණකරනය පිළිබඳ පළමු සමුළුව</HeroText1>
       <HeroText2>எழுத்தழகியல் மற்றும் எழுத்துருவியல் பற்றிய மாநாடு, கொழும்பு</HeroText2>

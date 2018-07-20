@@ -5,3 +5,14 @@ body {
   font-weight: 500;
   color: #351544;
 }
+
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero {
+  padding-top: 86px;
+}

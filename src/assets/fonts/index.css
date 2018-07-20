@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'Noto Sans ExtCond';
+  font-family: 'Noto Sans ExtraCondensed';
   src: url('./NotoSans-ExtraCondensedBoldItalic.ttf') format('opentype');
   font-weight: bold;
   font-style: italic;
@@ -68,4 +68,31 @@
     url('./NotoSansSinhalaUI-Regular.ttf') format('opentype');
   font-style: normal;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans ExtraCondensed';
+  src: url('./NotoSans-ExtraCondensedBoldItalic.woff2') format('woff2'),
+    url('./NotoSans-ExtraCondensedBoldItalic.woff') format('woff'),
+    url('./NotoSans-ExtraCondensedBoldItalic.ttf') format('opentype');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Noto Sans Sinhala UI Condensed';
+  src: url('./NotoSansSinhalaUI-CondensedMedium.woff2') format('woff2'),
+    url('./NotoSansSinhalaUI-CondensedMedium.woff') format('woff'),
+    url('./NotoSansSinhalaUI-CondensedMedium.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans Tamil Condensed';
+  src: url('./NotoSansTamil-CondensedMedium.woff2') format('woff2'),
+    url('./NotoSansTamil-CondensedMedium.woff') format('woff'),
+    url('./NotoSansTamil-CondensedMedium.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
 }

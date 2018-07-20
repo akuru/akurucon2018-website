@@ -32,7 +32,7 @@ const MainMenuItem = styled.li`
 `;
 
 const MainMenuContainerItemLink = styled.a`
-  font-family: Noto Sans ExtCond;
+  font-family: Noto Sans ExtraCondensed;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
@@ -48,7 +48,7 @@ const MainMenuContainerItemLink = styled.a`
 `;
 
 const MainMenu = () => (
-  <MainMenuContainer>
+  <MainMenuContainer id="navbar">
     <MainMenuItemList>
       <MainMenuItem>
         <MainMenuContainerItemLink href="/">ABOUT</MainMenuContainerItemLink>
