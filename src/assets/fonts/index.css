@@ -11,3 +11,34 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Noto Sans ExtCond';
+  src: url('./NotoSans-ExtraCondensedBoldItalic.ttf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galle';
+  src: url('./Gall.woff2') format('woff2'), url('./Gall.woff') format('woff'),
+    url('./Gall.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans Tamil';
+  src: url('./NotoSansTamilUI-Light.ttf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('NotoSans-Light.woff2') format('woff2'),
+    url('NotoSans-Light.woff') format('woff'),
+    url('NotoSans-Light.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 100;
+}
