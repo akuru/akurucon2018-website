@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Noto Sans SemCond ExtBd';
+  src: url('./NotoSans-SemiCondensedExtraBold.ttf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Med';
+  src: url('./NotoSans-Medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}

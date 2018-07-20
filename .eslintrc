@@ -38,6 +38,8 @@
 
     "max-len": [2, 100, 4],
 
+    "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
+
     "import/prefer-default-export": 0
   },
   "plugins": ["prettier"]
