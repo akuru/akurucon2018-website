@@ -25,6 +25,7 @@ const HeroText1 = styled.p`
 
 const HeroText2 = styled.p`
   font-family: Noto Sans Tamil;
+  font-weight: 100;
 `;
 
 const HeroText3 = styled.p`
