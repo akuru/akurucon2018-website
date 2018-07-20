@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Header from './components/header';
 import MainMenu from './components/mainMenu';
 import Hero from './components/hero';
+import Footer from './components/footer';
 
 import Home from './pages/home';
 
@@ -66,6 +67,8 @@ class App extends PureComponent {
         <Content>
           <ContentWrapper>
             <Home />
+
+            <Footer />
           </ContentWrapper>
         </Content>
       </AppContent>
