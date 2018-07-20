@@ -1,18 +1,39 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components';
 
 import Header from './components/header';
 import MainMenu from './components/mainMenu';
 import Hero from './components/hero';
 
+import Home from './pages/home';
+
+import dustBg from './assets/images/dust_bg.png';
+
+const AppContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+const Content = styled.div`
+  flex: 1;
+  background: url(${dustBg});
+`;
+
 const App = () => (
-  <div className="App">
-    <Header />
+  <AppContent className="App">
+    <div>
+      <Header />
 
-    <MainMenu />
+      <MainMenu />
 
-    <Hero />
-  </div>
+      <Hero />
+    </div>
+
+    <Content>
+      <Home />
+    </Content>
+  </AppContent>
 );
 
 export default App;

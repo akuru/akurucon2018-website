@@ -45,8 +45,9 @@ const HeroText5 = styled.p`
 `;
 
 const HeroText6 = styled.p`
-  font-family: Noto Sans Tamil;
+  font-family: Noto Sans Tamil UI;
   font-size: 1.5rem;
+  font-weight: 100;
 `;
 
 const HeroText7 = styled.p`

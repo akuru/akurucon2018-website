@@ -28,17 +28,44 @@
 }
 
 @font-face {
-  font-family: 'Noto Sans Tamil';
+  font-family: 'Noto Sans Tamil UI';
   src: url('./NotoSansTamilUI-Light.ttf') format('opentype');
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('NotoSans-Light.woff2') format('woff2'),
-    url('NotoSans-Light.woff') format('woff'),
-    url('NotoSans-Light.ttf') format('opentype');
+  src: url('./NotoSans-Light.woff2') format('woff2'),
+    url('./NotoSans-Light.woff') format('woff'),
+    url('./NotoSans-Light.ttf') format('opentype');
   font-style: normal;
   font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./NotoSans-Regular.woff2') format('woff2'),
+    url('./NotoSans-Regular.woff') format('woff'),
+    url('./NotoSans-Regular.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans Tamil UI';
+  src: url('./NotoSansTamilUI-Medium.woff2') format('woff2'),
+    url('./NotoSansTamilUI-Medium.woff') format('woff'),
+    url('./NotoSansTamilUI-Medium.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans Sinhala UI';
+  src: url('./NotoSansSinhalaUI-Regular.woff2') format('woff2'),
+    url('./NotoSansSinhalaUI-Regular.woff') format('woff'),
+    url('./NotoSansSinhalaUI-Regular.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
 }
