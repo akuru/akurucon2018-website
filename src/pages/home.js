@@ -11,6 +11,10 @@ const IntroContent = styled.div`
   padding: 10px;
   line-height: 0.45rem;
   padding: 32px 10px;
+
+  @media screen and (max-width: 779px) {
+    line-height: 1.4rem;
+  }
 `;
 
 const IntroText1 = styled.p`
@@ -52,6 +56,12 @@ const MartinMajoorPhoto = styled.img`
 const HomeFooter = styled.div`
   display: flex;
   margin: 67px 0 70px 0;
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 67px 0 44px 0;
+  }
 `;
 
 const HomeFooterLogoContainer = styled.div`
@@ -70,6 +80,12 @@ const HomeFooterLogo = styled.img`
 
 const HomeFooterContent = styled.div`
   max-width: 700px;
+
+  @media screen and (max-width: 800px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 36px;
+  }
 `;
 
 const HomeFooterContentText = styled.p`
@@ -90,6 +106,10 @@ const HomeFooterContentText = styled.p`
   &.home-footer-text3 {
     font-family: Noto Sans;
     font-weight: 400;
+  }
+
+  @media screen and (max-width: 680px) {
+    line-height: 1rem;
   }
 `;
 

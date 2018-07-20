@@ -13,6 +13,11 @@ const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   height: 100px;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    margin: 24px 0 38px 0px;
+  }
 `;
 
 const Logo = styled.img`
@@ -21,15 +26,29 @@ const Logo = styled.img`
 
 const Seperator = styled.div`
   padding: 0 17px 0 7px;
+
+  @media screen and (max-width: 800px) {
+    padding: 0;
+    width: 94%;
+    margin: 5px 0px;
+  }
 `;
 
 const SeperatorLine = styled.div`
   width: 35px;
   height: 3px;
   background-color: #111;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
-const HeaderContentContainer = styled.div``;
+const HeaderContentContainer = styled.div`
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+`;
 
 const HeaderContent = styled.span`
   display: block;

@@ -17,17 +17,30 @@ const MainMenuItemList = styled.ul`
   display: flex;
   margin: 12px 0;
   padding: 0;
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const MainMenuItem = styled.li`
   margin: 0 50px;
 
-  &:first-child {
-    margin-left: 0;
+  @media screen and (min-width: 801px) {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    margin: auto;
+    padding: 12px 41px;
   }
 `;
 

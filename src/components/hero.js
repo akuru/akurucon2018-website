@@ -17,6 +17,10 @@ const HeroContent = styled.div`
   color: #fce1c9;
   text-align: center;
   line-height: 0.35rem;
+
+  @media screen and (max-width: 680px) {
+    line-height: 1.4rem;
+  }
 `;
 
 const HeroText1 = styled.p`
