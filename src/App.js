@@ -19,12 +19,15 @@ const AppContent = styled.div`
 const Content = styled.div`
   flex: 1;
   background: url(${dustBg});
+  position: relative;
 `;
 
 const ContentWrapper = styled.div`
   max-width: 920px;
   margin: auto;
   padding: 0px 38px;
+  position: relative;
+  z-index: 10;
 `;
 
 class App extends PureComponent {
@@ -70,6 +73,19 @@ class App extends PureComponent {
 
             <Footer />
           </ContentWrapper>
+
+          <div id="clouds">
+            <div className="cloud cloud-foreground" />
+            <div className="cloud cloud-background" />
+            <div className="cloud cloud-foreground" />
+            <div className="cloud cloud-background" />
+            <div className="cloud cloud-foreground" />
+            <div className="cloud cloud-background" />
+            <div className="cloud cloud-background" />
+            <div className="cloud cloud-foreground" />
+            <div className="cloud cloud-background" />
+            <div className="cloud cloud-background" />
+          </div>
         </Content>
       </AppContent>
     );
