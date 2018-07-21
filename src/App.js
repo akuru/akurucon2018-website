@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Header from './components/header';
 import MainMenu from './components/mainMenu';
@@ -9,6 +10,7 @@ import Hero from './components/hero';
 import Footer from './components/footer';
 
 import Home from './pages/home';
+import Schedule from './pages/schedule';
 
 import dustBg from './assets/images/dust_bg.png';
 import kundaliya from './assets/images/kundaliya.svg';
@@ -88,55 +90,58 @@ class App extends PureComponent {
 
   render() {
     return (
-      <AppContent className="App">
-        <div>
-          <Header />
+      <Router>
+        <AppContent className="App">
+          <div>
+            <Header />
 
-          <MainMenu />
+            <MainMenu />
 
-          <Hero />
-        </div>
+            <Hero />
+          </div>
 
-        <Content>
-          <ParallaxProvider>
-            <ContentWrapper>
-              <Home />
+          <Content>
+            <ParallaxProvider>
+              <ContentWrapper>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/schedule" component={Schedule} />
 
-              <Footer />
-            </ContentWrapper>
+                <Footer />
+              </ContentWrapper>
 
-            <KundaliyaParallax1
-              offsetXMin="30%"
-              offsetXMax="-60%"
-              offsetYMin="-180"
-              slowerScrollRate
-              tag="figure"
-            >
-              <Kundaliya src={kundaliya} alt="Kundaliya" />
-            </KundaliyaParallax1>
+              <KundaliyaParallax1
+                offsetXMin="30%"
+                offsetXMax="-60%"
+                offsetYMin="-180"
+                slowerScrollRate
+                tag="figure"
+              >
+                <Kundaliya src={kundaliya} alt="Kundaliya" />
+              </KundaliyaParallax1>
 
-            <KundaliyaParallax2
-              offsetXMin="-60%"
-              offsetXMax="30%"
-              offsetYMin="-180"
-              slowerScrollRate
-              tag="figure"
-            >
-              <Kundaliya src={kundaliya} alt="Kundaliya" />
-            </KundaliyaParallax2>
+              <KundaliyaParallax2
+                offsetXMin="-60%"
+                offsetXMax="30%"
+                offsetYMin="-180"
+                slowerScrollRate
+                tag="figure"
+              >
+                <Kundaliya src={kundaliya} alt="Kundaliya" />
+              </KundaliyaParallax2>
 
-            <KundaliyaParallax3
-              offsetXMin="30%"
-              offsetXMax="-60%"
-              offsetYMin="-180"
-              slowerScrollRate
-              tag="figure"
-            >
-              <Kundaliya src={kundaliya} alt="Kundaliya" />
-            </KundaliyaParallax3>
-          </ParallaxProvider>
-        </Content>
-      </AppContent>
+              <KundaliyaParallax3
+                offsetXMin="30%"
+                offsetXMax="-60%"
+                offsetYMin="-180"
+                slowerScrollRate
+                tag="figure"
+              >
+                <Kundaliya src={kundaliya} alt="Kundaliya" />
+              </KundaliyaParallax3>
+            </ParallaxProvider>
+          </Content>
+        </AppContent>
+      </Router>
     );
   }
 }

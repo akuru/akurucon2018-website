@@ -16,3 +16,8 @@ body {
 .sticky + .hero {
   padding-top: 86px;
 }
+
+.menu-active{
+  color: #351544 !important;
+  background-color: #fce1c9;
+}

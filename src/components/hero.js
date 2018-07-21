@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { Parallax } from 'react-scroll-parallax';
+import { withRouter } from 'react-router-dom';
+import AnimateHeight from 'react-animate-height';
 
 import heroBg from '../assets/images/hero_bg.jpg';
 
@@ -81,26 +83,62 @@ const HeroButton = styled.a`
   }
 `;
 
-const Hero = () => (
-  <HeroContainer className="hero">
-    <HeroContent>
-      <HeroText1>අක්ෂර-රූපකරණය සහ අක්ෂර රටා නිර්මාණකරනය පිළිබඳ පළමු සමුළුව</HeroText1>
-      <HeroText2>எழுத்தழகியல் மற்றும் எழுத்துருவியல் பற்றிய மாநாடு, கொழும்பு</HeroText2>
-      <HeroText3>Typography conference in Colombo</HeroText3>
+class Hero extends PureComponent {
+  constructor(props) {
+    super(props);
+    const { location } = props;
 
-      <HeroText4>෴</HeroText4>
+    this.state = {
+      heroHeight: location.pathname === '/' ? 'auto' : 0
+    };
+  }
 
-      <HeroText5>ලන්දේසි මුද්‍රණ හා අක්ෂර-රූපකරණය තේමාවෙන්…</HeroText5>
-      <HeroText6>ஒல்லாந்தர் அச்சுக்கலை பற்றிய கருப்பொருளில்..</HeroText6>
-      <HeroText7>Celebrating typography of the Dutch Press in Ceylon…</HeroText7>
+  componentWillReceiveProps(nextProps) {
+    const { location } = nextProps;
 
-      <Parallax className="custom-class" offsetYMax={50} offsetYMin={-50} slowerScrollRate>
-        <HeroButton href="https://takas.lk/akurucon.html" target="_blank">
-          REGISTER TODAY
-        </HeroButton>
-      </Parallax>
-    </HeroContent>
-  </HeroContainer>
-);
+    if (location.pathname === '/') {
+      this.setState({
+        heroHeight: 'auto'
+      });
+    } else {
+      this.setState({
+        heroHeight: 0
+      });
+    }
+  }
 
-export default Hero;
+  render() {
+    const { heroHeight } = this.state;
+
+    return (
+      <div>
+        <AnimateHeight
+          duration={500}
+          height={heroHeight} // see props documentation bellow
+        >
+          <HeroContainer className="hero">
+            <HeroContent>
+              <HeroText1>අක්ෂර-රූපකරණය සහ අක්ෂර රටා නිර්මාණකරනය පිළිබඳ පළමු සමුළුව</HeroText1>
+              <HeroText2>எழுத்தழகியல் மற்றும் எழுத்துருவியல் பற்றிய மாநாடு, கொழும்பு</HeroText2>
+              <HeroText3>Typography conference in Colombo</HeroText3>
+
+              <HeroText4>෴</HeroText4>
+
+              <HeroText5>ලන්දේසි මුද්‍රණ හා අක්ෂර-රූපකරණය තේමාවෙන්…</HeroText5>
+              <HeroText6>ஒல்லாந்தர் அச்சுக்கலை பற்றிய கருப்பொருளில்..</HeroText6>
+              <HeroText7>Celebrating typography of the Dutch Press in Ceylon…</HeroText7>
+
+              <Parallax className="custom-class" offsetYMax={50} offsetYMin={-50} slowerScrollRate>
+                <HeroButton href="https://takas.lk/akurucon.html" target="_blank">
+                  REGISTER TODAY
+                </HeroButton>
+              </Parallax>
+            </HeroContent>
+          </HeroContainer>
+        </AnimateHeight>
+      </div>
+    );
+  }
+}
+
+export default withRouter(Hero);

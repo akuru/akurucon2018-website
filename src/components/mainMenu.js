@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link, withRouter } from 'react-router-dom';
 
 const MainMenuContainer = styled.nav`
   background-color: #d89c31;
@@ -44,7 +45,7 @@ const MainMenuItem = styled.li`
   }
 `;
 
-const MainMenuContainerItemLink = styled.a`
+const MainMenuContainerItemLink = styled(Link)`
   font-family: Noto Sans ExtraCondensed;
   font-weight: bold;
   font-style: italic;
@@ -60,26 +61,36 @@ const MainMenuContainerItemLink = styled.a`
   }
 `;
 
-const MainMenu = () => (
+const MainMenu = ({ location }) => (
   <MainMenuContainer id="navbar">
     <MainMenuItemList>
       <MainMenuItem>
-        <MainMenuContainerItemLink href="/">ABOUT</MainMenuContainerItemLink>
+        <MainMenuContainerItemLink
+          to="/"
+          className={location.pathname === '/' ? 'menu-active' : ''}
+        >
+          ABOUT
+        </MainMenuContainerItemLink>
       </MainMenuItem>
 
       <MainMenuItem>
-        <MainMenuContainerItemLink href="/">SCHEDULE</MainMenuContainerItemLink>
+        <MainMenuContainerItemLink
+          to="/schedule"
+          className={location.pathname === '/schedule' ? 'menu-active' : ''}
+        >
+          SCHEDULE
+        </MainMenuContainerItemLink>
       </MainMenuItem>
 
       <MainMenuItem>
-        <MainMenuContainerItemLink href="/">VENUE</MainMenuContainerItemLink>
+        <MainMenuContainerItemLink to="/">VENUE</MainMenuContainerItemLink>
       </MainMenuItem>
 
       <MainMenuItem>
-        <MainMenuContainerItemLink href="/">WORKSHOPS</MainMenuContainerItemLink>
+        <MainMenuContainerItemLink to="/">WORKSHOPS</MainMenuContainerItemLink>
       </MainMenuItem>
     </MainMenuItemList>
   </MainMenuContainer>
 );
 
-export default MainMenu;
+export default withRouter(MainMenu);
