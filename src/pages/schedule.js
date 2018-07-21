@@ -20,6 +20,15 @@ const Event = styled.div`
   grid-column-gap: 20px;
   margin-bottom: 45px;
 
+  @media screen and (max-width: 650px) {
+    grid-template-columns: 0px 0.7fr 1fr 0.8fr;
+    grid-column-gap: 2px;
+
+    &.new-event-group {
+      margin-top: 77px;
+    }
+  }
+
   &.new-event-group:not(:first-of-type) {
     margin-top: 111px;
   }
@@ -29,6 +38,10 @@ const EventDate = styled.div`
   .event-day-container {
     display: grid;
     grid-template-columns: 40px 55px;
+
+    @media screen and (max-width: 650px) {
+      margin-top: -46px;
+    }
   }
 
   .event-day {
@@ -67,8 +80,8 @@ const EventVenue = styled.div`
   text-align: right;
 `;
 
-const renderEvent = (schedule, event, index) => (
-  <Event className={index === 0 ? 'new-event-group' : ''}>
+const renderEvent = (schedule, event, index, scheduleIndex) => (
+  <Event key={`${scheduleIndex}-${index}`} className={index === 0 ? 'new-event-group' : ''}>
     <EventDate>
       {index === 0 && (
         <div className="event-day-container">
@@ -104,8 +117,8 @@ const Schedule = () => (
     <PageTitle>Event Schedule</PageTitle>
 
     <div>
-      {schedules.map(schedule =>
-        schedule.events.map((event, index) => renderEvent(schedule, event, index))
+      {schedules.map((schedule, scheduleIndex) =>
+        schedule.events.map((event, index) => renderEvent(schedule, event, index, scheduleIndex))
       )}
     </div>
   </div>
