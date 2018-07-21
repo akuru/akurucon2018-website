@@ -6,6 +6,7 @@ import martin from '../assets/images/martin.jpg';
 import typoLogo from '../assets/images/typo_logo.svg';
 import mooniakLogo from '../assets/images/mooniak_logo.svg';
 import embassyLogo from '../assets/images/embassy_logo.svg';
+import aodLogo from '../assets/images/aod_logo.svg';
 
 const IntroContent = styled.div`
   text-align: center;
@@ -60,7 +61,7 @@ const HomeFooter = styled.div`
 
   @media screen and (max-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 67px 0 44px 0;
   }
 `;
@@ -77,22 +78,22 @@ const HomeFooterLogoContainer = styled.div`
 
 const HomeFooterLogo = styled.img`
   width: 100%;
+  z-index: 44;
 `;
 
 const HomeFooterContent = styled.div`
-  max-width: 700px;
+  margin-top: -43px;
 
   @media screen and (max-width: 800px) {
     grid-column-start: 1;
-    grid-column-end: 4;
-    margin-top: 36px;
+    grid-column-end: 5;
   }
 `;
 
 const HomeFooterContentText = styled.p`
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin: 6px 0px;
-  line-height: 0.9rem;
+  line-height: 1.3rem;
 
   &.home-footer-text1 {
     font-family: Noto Sans Sinhala UI Condensed;
@@ -168,6 +169,12 @@ const Home = () => (
         <HomeFooterLogo src={embassyLogo} alt="Embassy" />
       </HomeFooterLogoContainer>
 
+      <HomeFooterLogoContainer>
+        <HomeFooterLogo src={aodLogo} alt="AOD" />
+      </HomeFooterLogoContainer>
+    </HomeFooter>
+
+    <HomeFooter>
       <HomeFooterContent>
         <HomeFooterContentText className="home-footer-text1">
           සංවිධානය: අකුරු සාමූහිකය සහ මූනියැක් විසින්, නෙදර්ලන්ත රාජධානියේ තානාපති කාර්යාලයේ සහ AOD
