@@ -96,3 +96,21 @@
   font-style: normal;
   font-weight: 500;
 }
+
+@font-face {
+  font-family: 'Noto Sans Condensed';
+  src: url('NotoSans-Condensed.woff2') format('woff2'),
+    url('NotoSans-Condensed.woff') format('woff'),
+    url('NotoSans-Condensed.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans Condensed';
+  src: url('NotoSans-CondensedBold.woff2') format('woff2'),
+    url('NotoSans-CondensedBold.woff') format('woff'),
+    url('NotoSans-CondensedBold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
