@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/fonts/index.css';
 import './index.css';
-import './kundaliya-clouds.css';
+
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 

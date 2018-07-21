@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Parallax } from 'react-scroll-parallax';
 
 import heroBg from '../assets/images/hero_bg.jpg';
 
@@ -93,9 +94,11 @@ const Hero = () => (
       <HeroText6>ஒல்லாந்தர் அச்சுக்கலை பற்றிய கருப்பொருளில்..</HeroText6>
       <HeroText7>Celebrating typography of the Dutch Press in Ceylon…</HeroText7>
 
-      <HeroButton href="#" target="_blank">
-        REGISTER TODAY
-      </HeroButton>
+      <Parallax className="custom-class" offsetYMax={50} offsetYMin={-50} slowerScrollRate>
+        <HeroButton href="#" target="_blank">
+          REGISTER TODAY
+        </HeroButton>
+      </Parallax>
     </HeroContent>
   </HeroContainer>
 );

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Parallax } from 'react-scroll-parallax';
 
 import martin from '../assets/images/martin.jpg';
 import typoLogo from '../assets/images/typo_logo.svg';
@@ -115,11 +116,13 @@ const HomeFooterContentText = styled.p`
 
 const Home = () => (
   <div>
-    <IntroContent>
-      <IntroText1>සියලු ඉදිරිපත්කිරීම් සිංහල, දෙමල සහ ඉංග්‍රීසි බසින්…</IntroText1>
-      <IntroText2>அனைத்து வெளியீடுகளும் சிங்களம், தமிழ் மற்றும் ஆங்கில மொழிகளில்...</IntroText2>
-      <IntroText3>All presentations in Sinhala, Tamil and English</IntroText3>
-    </IntroContent>
+    <Parallax className="custom-class" offsetYMax={20} offsetYMin={0} slowerScrollRate>
+      <IntroContent>
+        <IntroText1>සියලු ඉදිරිපත්කිරීම් සිංහල, දෙමල සහ ඉංග්‍රීසි බසින්…</IntroText1>
+        <IntroText2>அனைத்து வெளியீடுகளும் சிங்களம், தமிழ் மற்றும் ஆங்கில மொழிகளில்...</IntroText2>
+        <IntroText3>All presentations in Sinhala, Tamil and English</IntroText3>
+      </IntroContent>
+    </Parallax>
 
     <AboutContent>
       <HomeSectionTitle>About AkuruCon</HomeSectionTitle>

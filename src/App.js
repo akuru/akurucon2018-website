@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 
 import Header from './components/header';
 import MainMenu from './components/mainMenu';
@@ -9,6 +11,7 @@ import Footer from './components/footer';
 import Home from './pages/home';
 
 import dustBg from './assets/images/dust_bg.png';
+import kundaliya from './assets/images/kundaliya.svg';
 
 const AppContent = styled.div`
   display: flex;
@@ -28,6 +31,33 @@ const ContentWrapper = styled.div`
   padding: 0px 38px;
   position: relative;
   z-index: 10;
+`;
+
+const KundaliyaParallax = styled(Parallax)`
+  position: absolute;
+  z-index: 50;
+`;
+
+const KundaliyaParallax1 = KundaliyaParallax.extend`
+  top: 25%;
+  width: 190px;
+  left: 15%;
+`;
+
+const KundaliyaParallax2 = KundaliyaParallax.extend`
+  top: 50%;
+  width: 130px;
+  right: 15%;
+`;
+
+const KundaliyaParallax3 = KundaliyaParallax.extend`
+  top: 75%;
+  width: 220px;
+  left: 15%;
+`;
+
+const Kundaliya = styled.img`
+  opacity: 0.4;
 `;
 
 class App extends PureComponent {
@@ -68,24 +98,43 @@ class App extends PureComponent {
         </div>
 
         <Content>
-          <ContentWrapper>
-            <Home />
+          <ParallaxProvider>
+            <ContentWrapper>
+              <Home />
 
-            <Footer />
-          </ContentWrapper>
+              <Footer />
+            </ContentWrapper>
 
-          <div id="clouds">
-            <div className="cloud cloud-foreground" />
-            <div className="cloud cloud-background" />
-            <div className="cloud cloud-foreground" />
-            <div className="cloud cloud-background" />
-            <div className="cloud cloud-foreground" />
-            <div className="cloud cloud-background" />
-            <div className="cloud cloud-background" />
-            <div className="cloud cloud-foreground" />
-            <div className="cloud cloud-background" />
-            <div className="cloud cloud-background" />
-          </div>
+            <KundaliyaParallax1
+              offsetXMin="30%"
+              offsetXMax="-60%"
+              offsetYMin="-180"
+              slowerScrollRate
+              tag="figure"
+            >
+              <Kundaliya src={kundaliya} alt="Kundaliya" />
+            </KundaliyaParallax1>
+
+            <KundaliyaParallax2
+              offsetXMin="-60%"
+              offsetXMax="60%"
+              offsetYMin="-180"
+              slowerScrollRate
+              tag="figure"
+            >
+              <Kundaliya src={kundaliya} alt="Kundaliya" />
+            </KundaliyaParallax2>
+
+            <KundaliyaParallax3
+              offsetXMin="20%"
+              offsetXMax="-60%"
+              offsetYMin="-50"
+              slowerScrollRate
+              tag="figure"
+            >
+              <Kundaliya src={kundaliya} alt="Kundaliya" />
+            </KundaliyaParallax3>
+          </ParallaxProvider>
         </Content>
       </AppContent>
     );
