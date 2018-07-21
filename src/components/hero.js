@@ -11,7 +11,7 @@ const HeroContainer = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 40px 10px;
+  padding: 60px 10px;
 `;
 
 const HeroContent = styled.div`
@@ -69,7 +69,7 @@ const HeroButton = styled.a`
   text-decoration: none;
   color: #351544;
   background-color: #fbe0c8;
-  padding: 14px 22px;
+  padding: 18px 28px;
   border-radius: 10px;
   display: inline-block;
   margin-top: 33px;
@@ -95,7 +95,7 @@ const Hero = () => (
       <HeroText7>Celebrating typography of the Dutch Press in Ceylon…</HeroText7>
 
       <Parallax className="custom-class" offsetYMax={50} offsetYMin={-50} slowerScrollRate>
-        <HeroButton href="#" target="_blank">
+        <HeroButton href="https://takas.lk/akurucon.html" target="_blank">
           REGISTER TODAY
         </HeroButton>
       </Parallax>
