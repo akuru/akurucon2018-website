@@ -46,14 +46,14 @@ const KundaliyaParallax1 = KundaliyaParallax.extend`
 
 const KundaliyaParallax2 = KundaliyaParallax.extend`
   top: 50%;
-  width: 130px;
+  width: 190px;
   right: 15%;
 `;
 
 const KundaliyaParallax3 = KundaliyaParallax.extend`
   top: 75%;
-  width: 220px;
-  left: 15%;
+  width: 190px;
+  left: 20%;
 `;
 
 const Kundaliya = styled.img`
@@ -117,7 +117,7 @@ class App extends PureComponent {
 
             <KundaliyaParallax2
               offsetXMin="-60%"
-              offsetXMax="60%"
+              offsetXMax="30%"
               offsetYMin="-180"
               slowerScrollRate
               tag="figure"
@@ -126,9 +126,9 @@ class App extends PureComponent {
             </KundaliyaParallax2>
 
             <KundaliyaParallax3
-              offsetXMin="20%"
+              offsetXMin="30%"
               offsetXMax="-60%"
-              offsetYMin="-50"
+              offsetYMin="-180"
               slowerScrollRate
               tag="figure"
             >
