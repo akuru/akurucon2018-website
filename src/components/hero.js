@@ -65,21 +65,34 @@ const HeroText7 = styled.p`
 `;
 
 const HeroButton = styled.a`
-  font-family: Noto Sans ExtraCondensed;
-  font-weight: bold;
-  font-style: italic;
   text-decoration: none;
   color: #351544;
   background-color: #fbe0c8;
-  padding: 18px 28px;
+  padding: 10px 60px;
   border-radius: 10px;
   display: inline-block;
   margin-top: 33px;
   transition: all 0.5s;
+  line-height: 1.5rem;
 
   &:hover {
     color: #fff;
     background-color: #351544;
+  }
+
+  .english-register {
+    font-family: Noto Sans SemiCondensed;
+    font-weight: bold;
+  }
+
+  .sinhala-register {
+    font-family: Noto Sans Sinhala UI SemiCondensed;
+    font-weight: 800;
+  }
+
+  .tamil-register {
+    font-family: Noto Sans Tamil UI SemiCondensed;
+    font-weight: bold;
   }
 `;
 
@@ -130,7 +143,9 @@ class Hero extends PureComponent {
 
               <Parallax className="custom-class" offsetYMax={50} offsetYMin={-50} slowerScrollRate>
                 <HeroButton href="https://takas.lk/akurucon.html" target="_blank">
-                  REGISTER TODAY
+                  <span className="english-register">Register Today!</span> <br />
+                  <span className="sinhala-register">දැන්ම ලියාපදිංචි වන්න!</span> <br />
+                  <span className="tamil-register">இப்போது பதிவு செய்க!</span> <br />
                 </HeroButton>
               </Parallax>
             </HeroContent>

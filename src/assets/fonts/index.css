@@ -143,3 +143,30 @@
   font-style: italic;
   font-weight: 400;
 }
+
+@font-face {
+  font-family: 'Noto Sans SemiCondensed';
+  src: url('NotoSans-SemiCondensedBold.woff2') format('woff2'),
+    url('NotoSans-SemiCondensedBold.woff') format('woff'),
+    url('NotoSans-SemiCondensedBold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Noto Sans Sinhala UI SemiCondensed';
+  src: url('NotoSansSinhalaUI-SemiCondensedExtraBold.woff2') format('woff2'),
+    url('NotoSansSinhalaUI-SemiCondensedExtraBold.woff') format('woff'),
+    url('NotoSansSinhalaUI-SemiCondensedExtraBold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Noto Sans Tamil UI SemiCondensed';
+  src: url('NotoSansTamilUI-SemiCondensedBold.woff2') format('woff2'),
+    url('NotoSansTamilUI-SemiCondensedBold.woff') format('woff'),
+    url('NotoSansTamilUI-SemiCondensedBold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
