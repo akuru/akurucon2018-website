@@ -5,6 +5,7 @@ import typoLogo from '../assets/images/typo_logo.svg';
 import mooniakLogo from '../assets/images/mooniak_logo.svg';
 import embassyLogo from '../assets/images/embassy_logo.svg';
 import aodLogo from '../assets/images/aod_logo.svg';
+import leafyLogo from '../assets/images/leafycode_logo.svg';
 
 const FooterWrapper = styled.footer`
   background-color: #fff;
@@ -198,8 +199,8 @@ const Footer = () => (
         </FooterSponsorContainer>
 
         <FooterSponsorContainer>
-          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
-          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
+          <FooterSponorLogo src={leafyLogo} alt="LeafyCode" />
+          <FooterSponsorText>Technology Partner</FooterSponsorText>
         </FooterSponsorContainer>
 
         <FooterSponsorContainer>
