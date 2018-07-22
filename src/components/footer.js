@@ -8,16 +8,28 @@ import aodLogo from '../assets/images/aod_logo.svg';
 
 const FooterWrapper = styled.footer`
   background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const FooterContainer = styled.div`
-  max-width: 920px;
   margin: auto;
   padding: 0px 38px;
   position: relative;
   z-index: 10;
   margin-bottom: -18px;
   margin-top: -33px;
+
+  @media screen and (max-width: 800px) {
+    &:last-of-type {
+      width: 100%;
+      padding: 0px;
+    }
+  }
 `;
 
 const FooterText = styled.p`
@@ -94,6 +106,37 @@ const FooterContentText = styled.p`
   }
 `;
 
+const FooterSponsorContainer = styled.div``;
+
+const FooterSponorLogo = styled.img`
+  width: 67px;
+  height: 67px;
+  margin: auto;
+  display: block;
+  margin-bottom: 13px;
+`;
+
+const FooterSponsorText = styled.span`
+  font-family: Noto Sans SemiCondensed;
+  font-weight: 500;
+  font-size: 0.64rem;
+  line-height: 0.7rem;
+  display: block;
+  text-align: center;
+`;
+
+const FooterSponsorWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 67px 0 19px 0;
+  max-width: 460px;
+
+  @media screen and (max-width: 800px) {
+    max-width: none;
+  }
+`;
+
 const Footer = () => (
   <FooterWrapper>
     <FooterContainer>
@@ -145,6 +188,45 @@ const Footer = () => (
           Mooniak
         </FooterLink>
       </FooterText>
+    </FooterContainer>
+
+    <FooterContainer>
+      <FooterSponsorWrapper>
+        <FooterSponsorContainer>
+          <FooterSponorLogo src={typoLogo} alt="Mooniak" />
+          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
+        </FooterSponsorContainer>
+
+        <FooterSponsorContainer>
+          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
+          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
+        </FooterSponsorContainer>
+
+        <FooterSponsorContainer>
+          <FooterSponorLogo src={aodLogo} alt="Mooniak" />
+          <FooterSponsorText>Technology Partner</FooterSponsorText>
+        </FooterSponsorContainer>
+
+        <FooterSponsorContainer>
+          <FooterSponorLogo src={typoLogo} alt="Mooniak" />
+          <FooterSponsorText>Partner</FooterSponsorText>
+        </FooterSponsorContainer>
+
+        <FooterSponsorContainer>
+          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
+          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
+        </FooterSponsorContainer>
+
+        <FooterSponsorContainer>
+          <FooterSponorLogo src={aodLogo} alt="Mooniak" />
+          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
+        </FooterSponsorContainer>
+
+        <FooterSponsorContainer>
+          <FooterSponorLogo src={typoLogo} alt="Mooniak" />
+          <FooterSponsorText>MEdia Partner</FooterSponsorText>
+        </FooterSponsorContainer>
+      </FooterSponsorWrapper>
     </FooterContainer>
   </FooterWrapper>
 );
