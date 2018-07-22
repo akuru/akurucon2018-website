@@ -105,9 +105,9 @@ class App extends PureComponent {
               <ContentWrapper>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/schedule" component={Schedule} />
-
-                <Footer />
               </ContentWrapper>
+
+              <Footer />
 
               <KundaliyaParallax1
                 offsetXMin="30%"
