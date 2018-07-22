@@ -6,7 +6,6 @@ body {
   color: #351544;
 }
 
-
 .sticky {
   position: fixed !important;
   top: 0;
@@ -17,6 +16,26 @@ body {
   padding-top: 86px;
 }
 
-.menu-active{
+.menu-active {
   color: #351544 !important;
+}
+
+.site-page {
+  overflow: auto;
+  transition: opacity 0.8s;
+}
+
+.site-page.transition-appear {
+  opacity: 0;
+}
+
+.site-page.transition-appear.transition-appear-active {
+  opacity: 1;
+}
+.site-page.transition-leave {
+  opacity: 1;
+}
+
+.site-page.transition-leave.transition-leave-active {
+  opacity: 0;
 }

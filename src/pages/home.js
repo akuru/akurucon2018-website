@@ -52,7 +52,7 @@ const MartinMajoorPhoto = styled.img`
 `;
 
 const Home = () => (
-  <div>
+  <div className="transition-item site-page">
     <Parallax className="custom-class" offsetYMax={20} offsetYMin={0} slowerScrollRate>
       <IntroContent>
         <IntroText1>සියලු ඉදිරිපත්කිරීම් සිංහල, දෙමල සහ ඉංග්‍රීසි බසින්…</IntroText1>

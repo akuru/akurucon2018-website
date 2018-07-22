@@ -27,7 +27,7 @@ const VenueAddress = styled.p`
 `;
 
 const Venue = () => (
-  <VenueWrapper>
+  <VenueWrapper className="transition-item site-page">
     <SectionTitle>Mahaweli Centre</SectionTitle>
 
     <VenuePhoto src={mahaweliCentre} alt="Mahaweli Centre" />

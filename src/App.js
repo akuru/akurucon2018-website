@@ -2,16 +2,14 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Header from './components/header';
 import MainMenu from './components/mainMenu';
 import Hero from './components/hero';
 import Footer from './components/footer';
 
-import Home from './pages/home';
-import Schedule from './pages/schedule';
-import Venue from './pages/venue';
+import Routes from './components/routes';
 
 import dustBg from './assets/images/dust_bg.png';
 import kundaliya from './assets/images/kundaliya.svg';
@@ -105,9 +103,7 @@ class App extends PureComponent {
           <Content>
             <ParallaxProvider>
               <ContentWrapper>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/schedule" component={Schedule} />
-                <Route exact path="/venue" component={Venue} />
+                <Routes />
               </ContentWrapper>
 
               <KundaliyaParallax1

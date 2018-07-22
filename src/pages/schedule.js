@@ -113,7 +113,7 @@ const renderEvent = (schedule, event, index, scheduleIndex) => (
 );
 
 const Schedule = () => (
-  <div>
+  <div className="transition-item site-page">
     <PageTitle>Event Schedule</PageTitle>
 
     <div>
