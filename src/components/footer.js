@@ -8,8 +8,6 @@ import aodLogo from '../assets/images/aod_logo.svg';
 
 const FooterWrapper = styled.footer`
   background-color: #fff;
-  padding-top: 1px;
-  margin-top: 38px;
 `;
 
 const FooterContainer = styled.div`

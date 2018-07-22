@@ -11,6 +11,7 @@ import Footer from './components/footer';
 
 import Home from './pages/home';
 import Schedule from './pages/schedule';
+import Venue from './pages/venue';
 
 import dustBg from './assets/images/dust_bg.png';
 import kundaliya from './assets/images/kundaliya.svg';
@@ -25,6 +26,7 @@ const Content = styled.div`
   flex: 1;
   background: url(${dustBg});
   position: relative;
+  padding-bottom: 10px;
 `;
 
 const ContentWrapper = styled.div`
@@ -105,9 +107,8 @@ class App extends PureComponent {
               <ContentWrapper>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/schedule" component={Schedule} />
+                <Route exact path="/venue" component={Venue} />
               </ContentWrapper>
-
-              <Footer />
 
               <KundaliyaParallax1
                 offsetXMin="30%"
@@ -140,6 +141,8 @@ class App extends PureComponent {
               </KundaliyaParallax3>
             </ParallaxProvider>
           </Content>
+
+          <Footer />
         </AppContent>
       </Router>
     );
