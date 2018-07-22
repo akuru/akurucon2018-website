@@ -13,13 +13,6 @@
 }
 
 @font-face {
-  font-family: 'Noto Sans ExtraCondensed';
-  src: url('./NotoSans-ExtraCondensedBoldItalic.ttf') format('opentype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Galle';
   src: url('./Gall.woff2') format('woff2'), url('./Gall.woff') format('woff'),
     url('./Gall.ttf') format('opentype');
@@ -140,4 +133,13 @@
     url('NotoSansTamilUI-SemiCondensedMedium.ttf') format('opentype');
   font-style: normal;
   font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans ExtraCondensed';
+  src: url('NotoSans-ExtraCondensedItalic.woff2') format('woff2'),
+    url('NotoSans-ExtraCondensedItalic.woff') format('woff'),
+    url('NotoSans-ExtraCondensedItalic.ttf') format('opentype');
+  font-style: italic;
+  font-weight: 400;
 }

@@ -92,7 +92,12 @@ const MainMenu = ({ location }) => (
       </MainMenuItem>
 
       <MainMenuItem>
-        <MainMenuContainerItemLink to="/">WORKSHOPS</MainMenuContainerItemLink>
+        <MainMenuContainerItemLink
+          to="/workshops"
+          className={location.pathname === '/workshops' ? 'menu-active' : ''}
+        >
+          WORKSHOPS
+        </MainMenuContainerItemLink>
       </MainMenuItem>
     </MainMenuItemList>
   </MainMenuContainer>

@@ -74,12 +74,12 @@ const FooterContentText = styled.p`
   line-height: 1rem;
 
   &.footer-text1 {
-    font-family: Noto Sans Sinhala UI SemiCondensed;
+    font-family: Noto Sans Sinhala UI SemiCondensed, Noto Sans SemiCondensed;
     font-weight: 500;
   }
 
   &.footer-text2 {
-    font-family: Noto Sans Tamil UI SemiCondensed;
+    font-family: Noto Sans Tamil UI SemiCondensed, Noto Sans SemiCondensed;
     font-weight: 500;
   }
 
