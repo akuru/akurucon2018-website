@@ -22,7 +22,7 @@ const FooterContainer = styled.div`
 
 const FooterText = styled.p`
   text-align: left;
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   margin-bottom: 18px;
 `;
 
@@ -69,23 +69,23 @@ const FooterContent = styled.div`
 `;
 
 const FooterContentText = styled.p`
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   margin: 6px 0px;
   line-height: 1rem;
 
   &.footer-text1 {
-    font-family: Noto Sans Sinhala UI Condensed;
+    font-family: Noto Sans Sinhala UI SemiCondensed;
     font-weight: 500;
   }
 
   &.footer-text2 {
-    font-family: Noto Sans Tamil Condensed;
+    font-family: Noto Sans Tamil UI SemiCondensed;
     font-weight: 500;
   }
 
   &.footer-text3 {
-    font-family: Noto Sans;
-    font-weight: 400;
+    font-family: Noto Sans SemiCondensed;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 680px) {
