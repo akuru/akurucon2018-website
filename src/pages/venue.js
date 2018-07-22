@@ -18,6 +18,7 @@ const SectionTitle = styled.h2`
 
 const VenuePhoto = styled.img`
   margin-bottom: 11px;
+  width: 100%;
 `;
 
 const VenueDetails = styled.p``;

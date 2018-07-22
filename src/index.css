@@ -22,7 +22,7 @@ body {
 
 .site-page {
   overflow: auto;
-  transition: opacity 0.8s;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .site-page.transition-appear {
