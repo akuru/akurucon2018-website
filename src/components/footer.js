@@ -23,7 +23,7 @@ const FooterContainer = styled.div`
 const FooterText = styled.p`
   text-align: left;
   font-size: 0.64rem;
-  margin-bottom: 18px;
+  padding-bottom: 23px;
 `;
 
 const FooterLink = styled.a`
@@ -57,6 +57,7 @@ const FooterLogoContainer = styled.div`
 const FooterLogo = styled.img`
   width: 100%;
   z-index: 44;
+  min-height: 51px;
 `;
 
 const FooterContent = styled.div`
