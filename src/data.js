@@ -3,6 +3,7 @@ export const schedules = [
     day: 31,
     month: 'AUG',
     dayOfWeek: 'Friday',
+    free: true,
     events: [
       {
         time: '5:15 PM',
@@ -24,6 +25,7 @@ export const schedules = [
     day: '01',
     month: 'SEP',
     dayOfWeek: 'Saturday',
+    free: false,
     events: [
       {
         time: '8:00 AM',
