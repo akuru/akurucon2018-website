@@ -145,7 +145,7 @@ export const workshops = [
     footer: ''
   },
   {
-    title: 'Experiencing Caligraphy',
+    title: 'Experiencing Calligraphy!',
     speaker: 'Mahinda Bandara',
     details: `Details coming soon!`,
     footer: ''
