@@ -163,18 +163,16 @@ const Footer = () => (
         <FooterContent>
           <FooterContentText className="footer-text1">
             සංවිධානය: අකුරු සාමූහිකය සහ මූනියැක් විසින්, නෙදර්ලන්ත රාජධානියේ තානාපති කාර්යාලයේ සහ
-            AOD Colombo එකමුතුවෙන්, ශ්‍රී ලංකා රාජකීය ආසියාතික සංගමයේ සහයෝගයෙන්,
+            AOD එකමුතුවෙන්, ශ්‍රී ලංකා රාජකීය ආසියාතික සංගමයේ සහයෝගයෙන්,
           </FooterContentText>
 
           <FooterContentText className="footer-text2">
-            அகுரு குழுமம், மூனியக், AOD Colombo அத்தோடு நெதர்லாந்து தூதரகலாயத்துடன் இணைந்தும் தேசிய
+            அகுரு குழுமம், மூனியக், AOD அத்தோடு நெதர்லாந்து தூதரகலாயத்துடன் இணைந்தும் தேசிய
             சுவடிகள் கூட்டுத்தாபனத்தின் ஒத்துழைப்புடன் ஏற்பாடு செய்யப்பட்டுள்ளது.
           </FooterContentText>
 
           <FooterContentText className="footer-text3">
-            Organised by Akuru Collective and Mooniak in collaboration with AOD and the Embassy of
-            the Netherlands in Sri Lanka & Maldives and support of the Royal Asiatic Society of Sri
-            Lanka
+          Organised by Akuru Collective and Mooniak in collaboration with AOD and with the support from The Embassy of The Kingdom of the Netherlands in Sri Lanka.
           </FooterContentText>
         </FooterContent>
       </FooterContentContainer>
@@ -194,17 +192,17 @@ const Footer = () => (
     <FooterContainer>
       <FooterSponsorWrapper>
         <FooterSponsorContainer>
-          <FooterSponorLogo src={typoLogo} alt="Mooniak" />
+          <FooterSponorLogo src={leafyLogo} alt="LeafyCode" />
           <FooterSponsorText>Refreshments Partner</FooterSponsorText>
         </FooterSponsorContainer>
 
         <FooterSponsorContainer>
-          <FooterSponorLogo src={leafyLogo} alt="LeafyCode" />
+          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
           <FooterSponsorText>Technology Partner</FooterSponsorText>
         </FooterSponsorContainer>
 
         <FooterSponsorContainer>
-          <FooterSponorLogo src={aodLogo} alt="Mooniak" />
+          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
           <FooterSponsorText>Technology Partner</FooterSponsorText>
         </FooterSponsorContainer>
 
@@ -219,7 +217,7 @@ const Footer = () => (
         </FooterSponsorContainer>
 
         <FooterSponsorContainer>
-          <FooterSponorLogo src={aodLogo} alt="Mooniak" />
+          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
           <FooterSponsorText>Refreshments Partner</FooterSponsorText>
         </FooterSponsorContainer>
 
