@@ -140,57 +140,32 @@ export const schedules = [
 export const workshops = [
   {
     title: 'Web Typography',
-    speaker: 'John Doe',
-    details: `akuruCON is an annual conference on typography in Colombo, Sri Lanka. The inaugural 
-      conference is celebrating the shared typographic heritage of Sri Lanka and the Netherlands. 
-      The Dutch Press in Ceylon was was one of the first printing enterprises in the region and 
-      it  pioneered early typography of Sinhala and Tamil scripts. This one day conference 
-      features a series of workshops on typography & calligraphy and an evening of presentations 
-      focusing on Dutch and Sri Lankan typography.`,
-    footer: 'Keynote presentation by Martin Majoor, a Dutch typeface designer.'
+    speaker: 'TBA',
+    details: `Details coming soon!`,
+    footer: ''
   },
   {
     title: 'Experiencing Caligraphy',
     speaker: 'Mahinda Bandara',
-    details: `akuruCON is an annual conference on typography in Colombo, Sri Lanka. The inaugural 
-    conference is celebrating the shared typographic heritage of Sri Lanka and the Netherlands. 
-    The Dutch Press in Ceylon was was one of the first printing enterprises in the region and 
-    it  pioneered early typography of Sinhala and Tamil scripts. This one day conference features 
-    a series of workshops on typography & calligraphy and an evening of presentations focusing on
-    Dutch and Sri Lankan typography.`,
-    footer: 'Keynote presentation by Martin Majoor, a Dutch typeface designer.'
+    details: `Details coming soon!`,
+    footer: ''
   },
   {
     title: 'Font making tools',
     speaker: 'Tharique Azeez',
-    details: `akuruCON is an annual conference on typography in Colombo, Sri Lanka. The inaugural 
-    conference is celebrating the shared typographic heritage of Sri Lanka and the Netherlands. 
-    The Dutch Press in Ceylon was was one of the first printing enterprises in the region and 
-    it  pioneered early typography of Sinhala and Tamil scripts. This one day conference features 
-    a series of workshops on typography & calligraphy and an evening of presentations focusing on
-    Dutch and Sri Lankan typography.`,
-    footer: 'Keynote presentation by Martin Majoor, a Dutch typeface designer.'
+    details: `Details coming soon!`,
+    footer: ''
   },
   {
-    title: 'Palm leaf manuscripts',
-    speaker: 'University of Kelaniya',
-    details: `akuruCON is an annual conference on typography in Colombo, Sri Lanka. The inaugural 
-    conference is celebrating the shared typographic heritage of Sri Lanka and the Netherlands. 
-    The Dutch Press in Ceylon was was one of the first printing enterprises in the region and 
-    it  pioneered early typography of Sinhala and Tamil scripts. This one day conference features 
-    a series of workshops on typography & calligraphy and an evening of presentations focusing on
-    Dutch and Sri Lankan typography.`,
-    footer: 'Keynote presentation by Martin Majoor, a Dutch typeface designer.'
+    title: 'How Palm-leaf manuscripts were made?',
+    speaker: 'TBA',
+    details: `Details coming soon!`,
+    footer: ''
   },
   {
     title: 'Play with Display',
     speaker: 'Dr Sumanthri Samarawickrama',
-    details: `akuruCON is an annual conference on typography in Colombo, Sri Lanka. The inaugural 
-    conference is celebrating the shared typographic heritage of Sri Lanka and the Netherlands. 
-    The Dutch Press in Ceylon was was one of the first printing enterprises in the region and 
-    it  pioneered early typography of Sinhala and Tamil scripts. This one day conference features 
-    a series of workshops on typography & calligraphy and an evening of presentations focusing on
-    Dutch and Sri Lankan typography.`,
-    footer: 'Keynote presentation by Martin Majoor, a Dutch typeface designer.'
+    details: `Details coming soon!`,
+    footer: ''
   }
 ];

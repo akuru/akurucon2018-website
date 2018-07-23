@@ -6,6 +6,7 @@ import mooniakLogo from '../assets/images/mooniak_logo.svg';
 import embassyLogo from '../assets/images/embassy_logo.svg';
 import aodLogo from '../assets/images/aod_logo.svg';
 import leafyLogo from '../assets/images/leafycode_logo.svg';
+import rasLogo from '../assets/images/ras_logo.jpg';
 
 const FooterWrapper = styled.footer`
   background-color: #fff;
@@ -172,7 +173,7 @@ const Footer = () => (
           </FooterContentText>
 
           <FooterContentText className="footer-text3">
-          Organised by Akuru Collective and Mooniak in collaboration with AOD and with the support from The Embassy of The Kingdom of the Netherlands in Sri Lanka.
+          Organised by Akuru Collective and Mooniak in collaboration with AOD and with the support from The Embassy of The Kingdom of the Netherlands in Sri Lanka. 
           </FooterContentText>
         </FooterContent>
       </FooterContentContainer>
@@ -191,40 +192,16 @@ const Footer = () => (
 
     <FooterContainer>
       <FooterSponsorWrapper>
+      <FooterSponsorContainer>
+          <FooterSponorLogo src={rasLogo} alt="Royal Asiatic Society of Sri Lanka" />
+          <FooterSponsorText>Location partner</FooterSponsorText>
+        </FooterSponsorContainer>
         <FooterSponsorContainer>
           <FooterSponorLogo src={leafyLogo} alt="LeafyCode" />
-          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
+          <FooterSponsorText>Technology partner</FooterSponsorText>
         </FooterSponsorContainer>
 
-        <FooterSponsorContainer>
-          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
-          <FooterSponsorText>Technology Partner</FooterSponsorText>
-        </FooterSponsorContainer>
 
-        <FooterSponsorContainer>
-          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
-          <FooterSponsorText>Technology Partner</FooterSponsorText>
-        </FooterSponsorContainer>
-
-        <FooterSponsorContainer>
-          <FooterSponorLogo src={typoLogo} alt="Mooniak" />
-          <FooterSponsorText>Partner</FooterSponsorText>
-        </FooterSponsorContainer>
-
-        <FooterSponsorContainer>
-          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
-          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
-        </FooterSponsorContainer>
-
-        <FooterSponsorContainer>
-          <FooterSponorLogo src={mooniakLogo} alt="Mooniak" />
-          <FooterSponsorText>Refreshments Partner</FooterSponsorText>
-        </FooterSponsorContainer>
-
-        <FooterSponsorContainer>
-          <FooterSponorLogo src={typoLogo} alt="Mooniak" />
-          <FooterSponsorText>MEdia Partner</FooterSponsorText>
-        </FooterSponsorContainer>
       </FooterSponsorWrapper>
     </FooterContainer>
   </FooterWrapper>

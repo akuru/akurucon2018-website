@@ -128,7 +128,7 @@ const renderEvent = (schedule, event, index, scheduleIndex) => (
             <RegisterOrFree>
               LIMITED ENTRY <br />{' '}
               <RegisterNowButton href="https://takas.lk/akurucon.html" target="_blank">
-                RegisterNow
+                Register Now
               </RegisterNowButton>
             </RegisterOrFree>
           )}
