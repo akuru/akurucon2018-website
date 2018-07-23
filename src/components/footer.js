@@ -110,6 +110,7 @@ const FooterContentText = styled.p`
 
 const FooterSponsorContainer = styled.a`
   text-decoration: none;
+  color: #351544;
 `;
 
 const FooterSponorLogo = styled.img`
@@ -127,6 +128,7 @@ const FooterSponsorText = styled.span`
   line-height: 0.7rem;
   display: block;
   text-align: center;
+  color: #351544;
 `;
 
 const FooterSponsorWrapper = styled.div`
