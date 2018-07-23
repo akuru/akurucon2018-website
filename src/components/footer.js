@@ -108,7 +108,9 @@ const FooterContentText = styled.p`
   }
 `;
 
-const FooterSponsorContainer = styled.div``;
+const FooterSponsorContainer = styled.a`
+  text-decoration: none;
+`;
 
 const FooterSponorLogo = styled.img`
   width: 67px;
@@ -168,12 +170,13 @@ const Footer = () => (
           </FooterContentText>
 
           <FooterContentText className="footer-text2">
-            அகுரு குழுமம், மூனியக், AOD அத்தோடு நெதர்லாந்து தூதரகலாயத்துடன் இணைந்தும் தேசிய
-            சுவடிகள் கூட்டுத்தாபனத்தின் ஒத்துழைப்புடன் ஏற்பாடு செய்யப்பட்டுள்ளது.
+            அகுரு குழுமம், மூனியக், AOD அத்தோடு நெதர்லாந்து தூதரகலாயத்துடன் இணைந்தும் தேசிய சுவடிகள்
+            கூட்டுத்தாபனத்தின் ஒத்துழைப்புடன் ஏற்பாடு செய்யப்பட்டுள்ளது.
           </FooterContentText>
 
           <FooterContentText className="footer-text3">
-          Organised by Akuru Collective and Mooniak in collaboration with AOD and with the support from The Embassy of The Kingdom of the Netherlands in Sri Lanka. 
+            Organised by Akuru Collective and Mooniak in collaboration with AOD and with the support
+            from The Embassy of The Kingdom of the Netherlands in Sri Lanka.
           </FooterContentText>
         </FooterContent>
       </FooterContentContainer>
@@ -192,16 +195,18 @@ const Footer = () => (
 
     <FooterContainer>
       <FooterSponsorWrapper>
-      <FooterSponsorContainer>
+        <FooterSponsorContainer
+          href="http://www.royalasiaticsociety.lk/"
+          target="_blank"
+          title="Royal Asiatic Society of Sri Lanka"
+        >
           <FooterSponorLogo src={rasLogo} alt="Royal Asiatic Society of Sri Lanka" />
           <FooterSponsorText>Location partner</FooterSponsorText>
         </FooterSponsorContainer>
-        <FooterSponsorContainer>
+        <FooterSponsorContainer href="https://leafycode.com/" target="_blank" title="LeafyCode">
           <FooterSponorLogo src={leafyLogo} alt="LeafyCode" />
           <FooterSponsorText>Technology partner</FooterSponsorText>
         </FooterSponsorContainer>
-
-
       </FooterSponsorWrapper>
     </FooterContainer>
   </FooterWrapper>
