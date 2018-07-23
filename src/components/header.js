@@ -66,7 +66,7 @@ const Header = () => (
       </Seperator>
 
       <HeaderContentContainer>
-        <HeaderContent>29th - 31st AUG</HeaderContent>
+        <HeaderContent>31st AUG–1st SEP</HeaderContent>
         <HeaderContent>in Colombo, Sri Lanka</HeaderContent>
       </HeaderContentContainer>
     </LogoContainer>
