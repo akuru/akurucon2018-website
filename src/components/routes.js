@@ -14,6 +14,10 @@ const Routes = ({ location }) => (
       <Route exact path="/schedule" component={Schedule} />
       <Route exact path="/venue" component={Venue} />
       <Route exact path="/workshops" component={Workshops} />
+      <Route
+        path="/students"
+        component={() => (window.location = 'https://goo.gl/forms/UTJsOCh2ukzGTXe02')}
+      />
     </Switch>
   </PageTransition>
 );
