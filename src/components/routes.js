@@ -16,7 +16,7 @@ const Routes = ({ location }) => (
       <Route exact path="/workshops" component={Workshops} />
       <Route
         path="/students"
-        component={() => (window.location = 'https://goo.gl/forms/UTJsOCh2ukzGTXe02')}
+        component={() => (window.location = 'https://akurucon.typeform.com/to/j6GlvS')}
       />
     </Switch>
   </PageTransition>
