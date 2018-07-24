@@ -167,8 +167,7 @@ const Footer = () => (
       <FooterContentContainer>
         <FooterContent>
           <FooterContentText className="footer-text1">
-            සංවිධානය: අකුරු සාමූහිකය සහ මූනියැක් විසින්, නෙදර්ලන්ත රාජධානියේ තානාපති කාර්යාලයේ සහ
-            AOD එකමුතුවෙන්, ශ්‍රී ලංකා රාජකීය ආසියාතික සංගමයේ සහයෝගයෙන්,
+            සංවිධානය:  සංවිධානය: අකුරු සාමූහිකය සහ මූනියැක් විසින්, AOD එකමුතුවෙන් සහ නෙදර්ලන්ත රාජධානියේ තානාපති කාර්යාලයේ සහයෝගයෙන්…
           </FooterContentText>
 
           <FooterContentText className="footer-text2">
