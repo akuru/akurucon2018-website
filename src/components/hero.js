@@ -145,7 +145,7 @@ class Hero extends PureComponent {
                 <HeroButton href="https://takas.lk/akurucon.html" target="_blank">
                   <span className="english-register">Register Today!</span> <br />
                   <span className="sinhala-register">දැන්ම ලියාපදිංචි වන්න!</span> <br />
-                  <span className="tamil-register">இப்போது பதிவு செய்க!</span> <br />
+                  <span className="tamil-register">இப்போதே பதிவு செய்க!</span> <br />
                 </HeroButton>
               </Parallax>
             </HeroContent>
