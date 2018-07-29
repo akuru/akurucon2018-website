@@ -39,3 +39,7 @@ body {
 .site-page.transition-leave.transition-leave-active {
   opacity: 0;
 }
+
+.parallax-to-back {
+  z-index: 0 !important;
+}

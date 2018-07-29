@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
 import { schedules } from '../data';
@@ -156,16 +156,41 @@ const renderEvent = (schedule, event, index, scheduleIndex) => (
   </Event>
 );
 
-const Schedule = () => (
-  <div className="transition-item site-page">
-    <PageTitle>Event Schedule</PageTitle>
+class Schedule extends PureComponent {
+  componentDidMount() {
+    const parallaxElements = document.getElementsByClassName('parallax-outer');
+    if (parallaxElements) {
+      Array.prototype.forEach.call(parallaxElements, parallaxElement => {
+        parallaxElement.classList.add('parallax-to-back');
+      });
+    }
+  }
 
-    <div>
-      {schedules.map((schedule, scheduleIndex) =>
-        schedule.events.map((event, index) => renderEvent(schedule, event, index, scheduleIndex))
-      )}
-    </div>
-  </div>
-);
+  componentWillUnmount() {
+    const parallaxElements = document.getElementsByClassName('parallax-outer');
+
+    if (parallaxElements) {
+      Array.prototype.forEach.call(parallaxElements, parallaxElement => {
+        parallaxElement.classList.remove('parallax-to-back');
+      });
+    }
+  }
+
+  render() {
+    return (
+      <div className="transition-item site-page">
+        <PageTitle>Event Schedule</PageTitle>
+
+        <div>
+          {schedules.map((schedule, scheduleIndex) =>
+            schedule.events.map((event, index) =>
+              renderEvent(schedule, event, index, scheduleIndex)
+            )
+          )}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Schedule;
