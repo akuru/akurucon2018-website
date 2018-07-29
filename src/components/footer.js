@@ -25,13 +25,6 @@ const FooterContainer = styled.div`
   z-index: 10;
   margin-bottom: -18px;
   margin-top: -33px;
-
-  @media screen and (max-width: 800px) {
-    &:last-of-type {
-      width: 100%;
-      padding: 0px;
-    }
-  }
 `;
 
 const FooterText = styled.p`
@@ -167,11 +160,13 @@ const Footer = () => (
       <FooterContentContainer>
         <FooterContent>
           <FooterContentText className="footer-text1">
-            සංවිධානය: අකුරු සාමූහිකය සහ මූනියැක් විසින්, AOD එකමුතුවෙන් සහ නෙදර්ලන්ත රාජධානියේ තානාපති කාර්යාලයේ සහයෝගයෙන්…
+            සංවිධානය: අකුරු සාමූහිකය සහ මූනියැක් විසින්, AOD එකමුතුවෙන් සහ නෙදර්ලන්ත රාජධානියේ
+            තානාපති කාර්යාලයේ සහයෝගයෙන්…
           </FooterContentText>
 
           <FooterContentText className="footer-text2">
-            ஏற்பாடு: அகுரு குழுமம் மற்றும் மூனியக் ஆகியவற்றோடு AOD இன் கூட்டிணைவுடனும் நெதர்லாந்து தூதரக அலுவலகத்தின் ஒத்துழைப்புடனும்..
+            ஏற்பாடு: அகுரு குழுமம் மற்றும் மூனியக் ஆகியவற்றோடு AOD இன் கூட்டிணைவுடனும் நெதர்லாந்து
+            தூதரக அலுவலகத்தின் ஒத்துழைப்புடனும்..
           </FooterContentText>
 
           <FooterContentText className="footer-text3">
