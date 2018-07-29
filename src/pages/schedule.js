@@ -20,17 +20,21 @@ const Event = styled.div`
   grid-column-gap: 20px;
   margin-bottom: 45px;
 
+  &.new-event-group:not(:first-of-type) {
+    margin-top: 135px;
+  }
+
   @media screen and (max-width: 650px) {
     grid-template-columns: 0px 0.7fr 1fr 0.8fr;
     grid-column-gap: 2px;
 
     &.new-event-group {
-      margin-top: 87px;
-    }
-  }
+      margin-top: 97px;
 
-  &.new-event-group:not(:first-of-type) {
-    margin-top: 135px;
+      &:not(:first-of-type) {
+        margin-top: 155px;
+      }
+    }
   }
 `;
 
@@ -43,7 +47,7 @@ const EventDate = styled.div`
       margin-top: -67px;
 
       &.extra-space {
-        margin-top: -97px;
+        margin-top: -107px;
       }
     }
   }
