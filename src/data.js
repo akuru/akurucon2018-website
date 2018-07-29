@@ -11,13 +11,6 @@ export const schedules = [
         title: 'My type design philosophy',
         speaker: 'Martin Majoor',
         venue: 'Mahaweli Centre'
-      },
-      {
-        time: '5:45 PM',
-        type: 'TALK',
-        title: 'My type design philosophy',
-        speaker: 'Martin Majoor',
-        venue: 'Mahaweli Centre'
       }
     ]
   },
