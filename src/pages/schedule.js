@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
 import { schedules } from '../data';
@@ -20,17 +20,21 @@ const Event = styled.div`
   grid-column-gap: 20px;
   margin-bottom: 45px;
 
+  &.new-event-group:not(:first-of-type) {
+    margin-top: 135px;
+  }
+
   @media screen and (max-width: 650px) {
     grid-template-columns: 0px 0.7fr 1fr 0.8fr;
     grid-column-gap: 2px;
 
     &.new-event-group {
-      margin-top: 87px;
-    }
-  }
+      margin-top: 97px;
 
-  &.new-event-group:not(:first-of-type) {
-    margin-top: 135px;
+      &:not(:first-of-type) {
+        margin-top: 155px;
+      }
+    }
   }
 `;
 
@@ -43,7 +47,7 @@ const EventDate = styled.div`
       margin-top: -67px;
 
       &.extra-space {
-        margin-top: -97px;
+        margin-top: -107px;
       }
     }
   }
@@ -156,16 +160,41 @@ const renderEvent = (schedule, event, index, scheduleIndex) => (
   </Event>
 );
 
-const Schedule = () => (
-  <div className="transition-item site-page">
-    <PageTitle>Event Schedule</PageTitle>
+class Schedule extends PureComponent {
+  componentDidMount() {
+    const parallaxElements = document.getElementsByClassName('parallax-outer');
+    if (parallaxElements) {
+      Array.prototype.forEach.call(parallaxElements, parallaxElement => {
+        parallaxElement.classList.add('parallax-to-back');
+      });
+    }
+  }
 
-    <div>
-      {schedules.map((schedule, scheduleIndex) =>
-        schedule.events.map((event, index) => renderEvent(schedule, event, index, scheduleIndex))
-      )}
-    </div>
-  </div>
-);
+  componentWillUnmount() {
+    const parallaxElements = document.getElementsByClassName('parallax-outer');
+
+    if (parallaxElements) {
+      Array.prototype.forEach.call(parallaxElements, parallaxElement => {
+        parallaxElement.classList.remove('parallax-to-back');
+      });
+    }
+  }
+
+  render() {
+    return (
+      <div className="transition-item site-page">
+        <PageTitle>Event Schedule</PageTitle>
+
+        <div>
+          {schedules.map((schedule, scheduleIndex) =>
+            schedule.events.map((event, index) =>
+              renderEvent(schedule, event, index, scheduleIndex)
+            )
+          )}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Schedule;
