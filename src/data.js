@@ -29,7 +29,7 @@ export const schedules = [
         time: '9:00 AM',
         type: 'WORKSHOP I',
         title: 'Web typography',
-        speaker: 'Martin Majoor',
+        speaker: 'Mooniak',
         venue: 'RCU Skills Centre'
       },
       {
