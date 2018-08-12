@@ -69,15 +69,15 @@ export const schedules = [
       },
       {
         time: '2:15 PM',
-        type: 'INTRODUCTION',
-        title: 'Dutch-Sri Lankan Shared Typography Heritage Project',
-        speaker: 'Dutch Embassy',
+        type: 'INTRO',
+        title: 'Dutch-Sri Lankan shared typography heritage',
+        speaker: 'Pathum Egodawatta',
         venue: 'Mahaweli Centre'
       },
       {
         time: '2:45 PM',
         type: 'TALK',
-        title: 'The Dutch Press in Ceylon and its typography',
+        title: 'The typography of the Dutch Press in Ceylon',
         speaker: 'Dr Sumantri Samarawickrama',
         venue: 'Mahaweli Centre'
       },
@@ -111,20 +111,20 @@ export const schedules = [
       },
       {
         time: '5:15 PM',
-        type: 'Galle fonts launch',
-        speaker: 'Mooniak',
+        type: 'Galle fonts project launch',
+        speaker: 'Mooniak: Janaka Attanayake, Kosala Senevirathne, Pathum Egodawatta, Thariqu Azeez',
         venue: 'Mahaweli Centre'
       },
 
       {
-        time: '5:30 PM',
+        time: '6:00 PM',
         specialEventTitle: 'CLOSING REMARKS',
         venue: 'Mahaweli Centre'
       },
       {
         time: '7:30 PM',
-        specialEventTitle: 'PARTY',
-        venue: 'Mahaweli Centre'
+        specialEventTitle: 'NETWORKING EVENT',
+        venue: 'TBA'
       }
     ]
   }
@@ -133,7 +133,7 @@ export const schedules = [
 export const workshops = [
   {
     title: 'Web Typography',
-    speaker: 'TBA',
+    speaker: 'Pathum Egodawatta',
     details: `Details coming soon!`,
     footer: ''
   },
