@@ -131,34 +131,36 @@ export const schedules = [
 ];
 
 export const workshops = [
+
   {
-    title: 'Web Typography',
-    speaker: 'Pathum Egodawatta',
-    details: `Details coming soon!`,
-    footer: ''
-  },
-  {
-    title: 'Experiencing Calligraphy!',
-    speaker: 'Mahinda Bandara',
-    details: `Details coming soon!`,
-    footer: ''
-  },
-  {
-    title: 'Font making tools',
+    title: 'Introduction to font-making tools',
     speaker: 'Tharique Azeez',
-    details: `Details coming soon!`,
-    footer: ''
+    details: `A workshop that focuses on providing an understanding on construction of letterforms while learning how to avoid or re-correct errors in the sketching process. Once a clear understanding of letter formation is gained, recreating the sketches is the next step, followed by creating the font using a font making software.
+    Previous experience of type design will not be required for this workshop and participants will gain an intellectual understanding of typography, typeface sketching and knowledge on how to draw type using software.`,
+    footer: 'MEDIUM:  English / Tamil / Sinhala | WHAT TO BRING: A laptop with password to install software (fontforge.org), Notebook & sketchbook, Pencils & Pencil sharpener, Eraser / Ruler'
   },
   {
-    title: 'How Palm-leaf manuscripts were made?',
-    speaker: 'TBA',
-    details: `Details coming soon!`,
-    footer: ''
+    title: 'Introduction to font-making tools 2',
+    speaker: 'Pathum Egodawatta',
+    details: `A workshop that focuses on providing an understanding on construction of letterforms while learning how to avoid or re-correct errors in the sketching process. Once a clear understanding of letter formation is gained, recreating the sketches is the next step, followed by creating the font using a font making software.
+    Previous experience of type design will not be required for this workshop and participants will gain an intellectual understanding of typography, typeface sketching and knowledge on how to draw type using software.`,
+    footer: 'MEDIUM:   Sinhala / English | WHAT TO BRING: A laptop with password to install software, Notebook & sketchbook, Pencils & Pencil sharpener, Eraser / Ruler'
+  },
+  {
+    title: 'Experiencing Calligraphy! ආධුනිකයන්ට කැලිග්‍රෆි! ',
+    speaker: 'Mahinda Bandara',
+    details: `A beginners workshop introducing the basics of calligraphy for calligraphy and lettering enthusiasts. A basic understanding of different calligraphy styles will be gained along with practical guidance to help  develops skills.`,
+    footer: ' MEDIUM: Sinhala / English | WHAT TO BRING:  Notebook & sketchbook, 80gsm drawing papers'
+  },
+  {
+    title: 'All about palm-leaf manuscripts',
+    speaker: 'Palm Leaf Manuscript Study & Research Library - University of Kelaniya.',
+    details: `A workshop on Palm leaf manuscripts focusing on production and usage. A closer look at actual manuscripts, different writing styles along with the knowledge of the manuscript preparation process and writing techniques awaits participants. All taught by experts from the Palm Leaf Manuscript Study & Research Library - University of Kelaniya.`,
+    footer: 'WHAT TO BRING: Notebook & sketchbook, Pencils, Ruler, Magnifier glass'
   },
   {
     title: 'Play with Display',
     speaker: 'Dr Sumanthri Samarawickrama',
-    details: `Details coming soon!`,
-    footer: ''
-  }
+    details: `A workshop to help start off the Sinhala type design process where a few old Sinhala display typefaces and their compositions will be discussed. Completion of this workshop allows participants to design display fonts using letterform knowledge inspired by Sinhala display typefaces of the 19th century.`,
+    footer: 'MEDIUM:   Sinhala / English | WHAT TO BRING:  Notebook & sketchbook, Rulers, Pencils, Erasers, Black Markers (Pointed and Wedged)'  }
 ];
