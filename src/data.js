@@ -22,109 +22,91 @@ export const schedules = [
     events: [
       {
         time: '8:00 AM',
-        specialEventTitle: 'REGISTRATION AND TEA',
-        venue: 'Mahaweli Centre'
+        specialEventTitle: 'REGISTRATION',
+        venue: 'RCU Skills Centre'
       },
       {
         time: '9:00 AM',
-        type: 'WORKSHOP I',
-        title: 'Web typography',
-        speaker: 'Mooniak',
-        venue: 'RCU Skills Centre'
-      },
-      {
-        type: 'WORKSHOP II',
-        title: 'Experiencing Calligraphy',
-        speaker: 'Mahinda Bandara',
-        venue: 'RCU Skills Centre'
-      },
-      {
-        type: 'WORKSHOP III',
-        title: 'Font making tools',
-        speaker: 'Tharique Azeez',
-        venue: 'RCU Skills Centre'
-      },
-      {
-        type: 'WORKSHOP IV',
-        title: 'Palm leaf manuscripts',
-        speaker: 'Kelaniya University',
-        venue: 'RCU Skills Centre'
-      },
-      {
-        type: 'WORKSHOP V',
-        title: 'Play with Display',
-        speaker: 'Dr Sumanthri Samarawickrama',
+        specialEventTitle: 'WORKSHOPS',
         venue: 'RCU Skills Centre'
       },
 
       {
         time: '12:30 PM',
-        specialEventTitle: 'LUNCH BREAK',
+        specialEventTitle: 'WALK TO MAHAWELI CENTRE & LUNCH',
         venue: 'Mahaweli Centre'
       },
       {
         time: '2:00 PM',
-        specialEventTitle: 'EVENT STARTS',
-        venue: 'Mahaweli Centre'
+        specialEventTitle: 'CONFERENCE STARTS',
+        venue: 'Mahaweli Centre Auditorium'
+      },
+      {
+        time: '2:00 PM',
+        type: 'WELCOME',
+        title: 'Introduction to Dutch-Sri Lankan shared typography heritage project',
+        speaker: 'Pathum Egodawatta',
+        venue: 'Mahaweli Centre Auditorium'
       },
       {
         time: '2:15 PM',
-        type: 'INTRO',
-        title: 'Dutch-Sri Lankan shared typography heritage',
-        speaker: 'Pathum Egodawatta',
-        venue: 'Mahaweli Centre'
-      },
-      {
-        time: '2:45 PM',
-        type: 'TALK',
-        title: 'The typography of the Dutch Press in Ceylon',
-        speaker: 'Dr Sumantri Samarawickrama',
-        venue: 'Mahaweli Centre'
-      },
-      {
-        time: '3:20 PM',
-        type: 'TALK',
+        type: 'KEYNOTE 1',
         title: 'History of sans-serifs',
         speaker: 'Martin Majoor',
-        venue: 'Mahaweli Centre'
+        venue: 'Mahaweli Centre Auditorium'
       },
-
       {
-        time: '4:00 PM',
-        specialEventTitle: 'TEA BREAK',
-        venue: 'Mahaweli Centre'
-      },
-
-      {
-        time: '4:15 PM',
+        time: '3:00 PM',
         type: 'TALK',
-        title: 'Coins and currency from the  Dutch Ceylon',
-        speaker: 'Dr Kavan Ratnatunga',
+        title: 'The Dutch Press in Ceylon and its typography',
+        speaker: 'Pathum Egodawatta',
+        venue: 'Mahaweli Centre Auditorium'
+      },
+      {
+        time: '3:40 PM',
+        type: 'TALK',
+        title: 'Reconstruction of letterforms; from handwritten to print',
+        speaker: 'Dr Sumantri Samarawickrama',
+        venue: 'Mahaweli Centre Auditorium'
+      },
+
+      {
+        time: '4:10 PM',
+        specialEventTitle: 'BREAK',
         venue: 'Mahaweli Centre'
       },
       {
-        time: '4:45 PM',
+        time: '4:40 PM',
+        type: 'SPEECH',
+        title: 'Embassy of the Netherlands in Sri Lanka',
+        speaker: 'by the Deputy Head of Mission',
+        venue: 'Mahaweli Centre Auditorium'
+      },
+      {
+        time: '5:00 PM',
+        type: 'SPEECH',
+        title: 'Sinhala and Thamil on Coins and Currency of Dutch Ceylon',
+        speaker: 'Dr Kavan Ratnatunga',
+        venue: 'Mahaweli Centre Auditorium'
+      },
+      {
+        time: '5:40 PM',
         type: 'TALK',
         title: 'The last Dutch telephone book',
         speaker: 'Martin Majoor',
-        venue: 'Mahaweli Centre'
+        venue: 'Mahaweli Centre Auditorium'
       },
       {
-        time: '5:15 PM',
+        time: '6:20 PM',
         type: 'Galle fonts project launch',
-        speaker: 'Mooniak: Janaka Attanayake, Kosala Senevirathne, Pathum Egodawatta, Thariqu Azeez',
-        venue: 'Mahaweli Centre'
+        speaker: 'Mooniak',
+        venue: 'Mahaweli Centre Auditorium'
       },
-
       {
-        time: '6:00 PM',
+        time: '6:40 PM',
         specialEventTitle: 'CLOSING REMARKS',
-        venue: 'Mahaweli Centre'
-      },
-      {
-        time: '7:30 PM',
-        specialEventTitle: 'NETWORKING EVENT',
-        venue: 'TBA'
+        venue: 'Mahaweli Centre',
+        speaker: 'Tharique Azeez for Akuru Collective',
       }
     ]
   }
@@ -149,7 +131,7 @@ export const workshops = [
     title: 'Writing on palm-leaf manuscripts',
     speaker: 'Palm Leaf Manuscript Study & Research Library - University of Kelaniya.',
     details: `A workshop on Palm leaf manuscripts focusing on production and usage. A closer look at actual manuscripts, different writing styles along with the knowledge of the manuscript preparation process and writing techniques awaits participants. All taught by experts from the Palm Leaf Manuscript Study & Research Library - University of Kelaniya.`,
-    footer: 'WHAT TO BRING: Notebook & sketchbook, Pencils, Ruler, Magnifier glass'
+    footer: 'MEDIUM: Sinhala / English | WHAT TO BRING: Notebook & sketchbook, Pencils, Ruler, Magnifier glass'
   },
   {
     title: 'Play with Display - Sinhala display typography',
